@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsh Panesar's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+</head>
+
+<body>
+    <script src="script.js"></script>    
+
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+
+        <!-- Main Logo: Top of the Page -->
+        <div class="logo">
+            Arsh Panesar
+        </div>
+
+        <!-- Portfolio Sections -->
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about"> About </a></li>
+                <li><a href="#experience"> Experience </a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#contact"> Contact </a></li>
+            </ul>
+        </div>
+
+    </nav>
+  
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Arsh Panesar
+        </div>
+
+        <div class="hamburger-menu">
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Actual Links to Sections -->
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()"> About </a></li>
+                <li><a href="#experience" onclick="toggleMenu()"> Experience </a></li>
+                <li><a href="#projects" onclick="toggleMenu()"> Projects </a></li>
+                <li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Profile/Intro Section -->
+    <section id="profile">
+        
+        <!-- Profile Photo -->
+        <div class="section__pic-container">
+            <img src="./assets/Profile_Pic.png" alt="Arsh Panesar's Profile Picture">
+        </div>
+
+        <!-- Introduction Text -->
+        <div class="section__text">
+            
+            <p class="section__text__p1">
+                Hello, I'm
+            </p>
+            <h1 class="title">
+                Arsh Panesar
+            </h1>
+            <p class="section__text__p2">
+                <!-- Game Developer -->
+            </p>
+            
+            <div class="btn-container">
+                
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+
+            </div>
+
+            <div id="socials-container">
+                
+                <a href="https://www.linkedin.com/in/arsh-panesar-b0334a1ba/" target="_blank">
+                    <img src="./assets/LinkedIn_Icon.svg" alt="LinkedIn Profile" class="icon">
+                </a>
+
+                <a href="https://github.com/ArshPanesar" target="_blank">
+                    <img src="./assets/Github_Icon.svg" alt="Github Profile" class="icon">
+                </a>
+
+                <a href="https://arsh-panesar.itch.io/" target="_blank">
+                    <img src="./assets/Itch_Icon.svg" alt="Itch.io Profile" class="icon">
+                </a>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        
+        <p class="section__text__p1">
+            Get To Know More
+        </p>
+        <h1 class="title">
+            About Me
+        </h1>
+
+        <div class="section-container">
+
+            <div class="about-details-container">
+
+                <div class="about-containers">
+
+                    <!-- About Me -->
+                    <div class="about-text-container">
+                        <p>
+                        I'm a Computer Science graduate student at New York University with a focus on software engineering, game development, and real-time systems.
+
+                        I've built projects ranging from physics simulations and procedural terrain generation to performance-optimized tools for rendering and gameplay. I enjoy designing complex systems that blend creativity and engineering - whether in interactive experiences, visualization, or high-performance computing.
+
+                        I'm skilled in C, C++, C#, and Python, with experience in Game Engines, Machine Learning and Graphics Programming, and I'm always looking forward to developing efficient and robust software.
+                        </p>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="education-section">
+                    
+                        <h3 class="education-section-title">
+                            Education
+                        </h3>
+
+                        <div class="education-container">
+
+                            <div class="education-item">
+                                <span class="edu-left">New York University</span>
+                                <span class="edu-right">M.Sc. in Computer Science (2024 – 2026)</span>
+                            </div>
+
+                            <div class="education-item">
+                                <span class="edu-left">University of Florida</span>
+                                <span class="edu-right">Senior Certificate in Computer Science (2024)</span>
+                            </div>
+
+                            <div class="education-item">
+                                <span class="edu-left">Amity University</span>
+                                <span class="edu-right">B.Tech. in Computer Science and Engineering (2020 – 2024)</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Skills -->
+                <div class="skills-container">
+
+                    <h3 class="skills-container-title">
+                        Skills
+                    </h3>
+
+                    <div class="skills-container-items">
+                        
+                        <div class="skill-category">
+                        <h4 class="skill-category-title">Programming Languages</h4>
+                        <ul class="skill-list">
+                            <li class="skill-pill">C++</li>
+                            <li class="skill-pill">C#</li>
+                            <li class="skill-pill">C</li>
+                            <li class="skill-pill">Python</li>
+                            <li class="skill-pill">Lua</li>
+                            <li class="skill-pill">Java</li>
+                            <li class="skill-pill">GDScript</li>
+                        </ul>
+                        </div>
+
+                        <div class="skill-category">
+                        <h4 class="skill-category-title">Tools</h4>
+                        <ul class="skill-list">
+                            <li class="skill-pill">Unreal Engine</li>
+                            <li class="skill-pill">Unity</li>
+                            <li class="skill-pill">Godot</li>
+                            <li class="skill-pill">OpenGL</li>
+                            <li class="skill-pill">CUDA</li>
+                            <li class="skill-pill">Git</li>
+                            <li class="skill-pill">OpenCV</li>
+                            <li class="skill-pill">Tensorflow</li>
+                        </ul>
+                        </div>
+
+                        <div class="skill-category">
+                        <h4 class="skill-category-title">Other</h4>
+                        <ul class="skill-list">
+                            <li class="skill-pill">Data Structures & Algorithms</li>
+                            <li class="skill-pill">Machine Learning</li>
+                            <li class="skill-pill">Linux</li>
+                        </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Down Arrow -->
+        <!-- <img src="./assets/Down-Arrow.svg" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'"/> -->
+
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h1 class="title">
+            Experience
+        </h1>
+
+        <section class="section-container">
+            
+            <div class="experience-section">
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-role">Unity Developer Summer Intern</h3>
+                        <span class="experience-company">Aigroedge Technologies</span>
+                        <span class="experience-date">May 2023 - June 2023</span>
+                    </div>
+
+                    <ul class="experience-description">
+                        <li>Developed a VR Surgical Simulation System capable of producing smooth 3D mesh cuts using mesh deformation and vertex-face editing techniques.</li>
+                        <li>Established real-time Bluetooth communication between Unity and Arduino devices to transmit gyroscope data for in-game mesh rotation.</li>
+                        <li>Designed a realistic hospital room environment using Blender assets and implemented shaders for X-Ray, Clipping, and Hologram effects through Unity’s Shader Graph.</li>
+                    </ul>
+
+                    <div class="experience-tech">
+                        <span class="tech-pill">Unity</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">Blender</span>
+                        <span class="tech-pill">Shader Graph</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h1 class="title">
+            Projects
+        </h1>
+
+        <section class="projects-container">
+            
+            <!-- Multiplayer Aerial Combat -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Multiplayer Aerial Combat Game</h3>
+                        <p class="project-subtitle">Unreal Engine 5 | C++ | Blueprints</p>
+                    </summary>
+                    
+                    <div class="project-video">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/Z01IaK6mlR8?si=vvxCVAPJebiU_JVf" 
+                            title="Multiplayer Aerial Combat Prototype (Made in Unreal Engine 5)" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="project-image-gallery">
+                        <img src="./assets/projects/multiplayer-aerial-combat/Icon.jpg" alt="Gameplay Screenshot">
+                    </div>
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Developed a fully functional flying vehicle with combat mechanics, integrating networked movement, cosmetic details, and 12+ synchronized properties using Remote Procedure Calls.</li>
+                            <li>Implemented projectile shooting with network prediction via the Gameplay Ability System and built a city using Unreal's PCG Graph for procedural generation.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">Unreal Engine 5</span>
+                            <span class="tech-pill">C++</span>
+                            <span class="tech-pill">Blueprints</span>
+                            <span class="tech-pill">Gameplay Ability System</span>
+                            <span class="tech-pill">Network Replication</span>
+                            <span class="tech-pill">Procedural Generation (PCG Graph)</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Multiplayer-Aerial-Combat" target="_blank" class="project-link">View on GitHub</a>
+                            <a href="https://arsh-panesar.itch.io/aerial-combat-multiplayer" target="_blank" class="project-link">View on Itch</a>
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <!-- Minecraft Terrain Generation -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Minecraft Terrain Generation with an In-Game Menu</h3>
+                        <p class="project-subtitle">Unity Engine | C#</p>
+                    </summary>
+                    
+                    <div class="project-image-gallery">
+                        <img src="https://user-images.githubusercontent.com/43693790/236690216-e9dfee96-9ec9-427c-ae28-34fcf8affdeb.png" alt="Gameplay Screenshot">
+                        <img src="https://user-images.githubusercontent.com/43693790/236690220-f4253e8e-4d85-4f70-9b9b-420f86e54071.png" alt="Gameplay Screenshot">
+                    </div>
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Created Minecraft's Procedural Terrain Generation by coupling Perlin Noise and Fractal Brownian Motion, including an In-Game Menu to manipulate up to 7 generation parameters at runtime.</li>
+                            <li>Optimised Terrain Generation by distributing the workload between successive main loop iterations, and increased rendering performance by 50% through directly generating chunk meshes at runtime.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">Unity Engine</span>
+                            <span class="tech-pill">C#</span>
+                            <span class="tech-pill">Procedural Generation</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Minecraft-Clone" target="_blank" class="project-link">View on GitHub</a>
+                            <a href="https://arsh-panesar.itch.io/minecraft-clone" target="_blank" class="project-link">View on Itch</a>
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <!-- Ray Tracer from Scratch -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Ray Tracer from scratch</h3>
+                        <p class="project-subtitle">C++ | CImg</p>
+                    </summary>
+                    
+                    <div class="project-image-gallery">
+                        <img src="https://github.com/ArshPanesar/Ray-Tracer/raw/master/animations/0.png" alt="Gameplay Screenshot">
+                        <img src="https://github.com/ArshPanesar/Ray-Tracer/raw/master/animations/150.png" alt="Gameplay Screenshot">
+                    </div>
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Built a ray tracer from scratch in C++, implementing core components such as ray casting, illumination, material shading, and triangle intersection logic.</li>
+                            <li>Generated a simple animation by rendering successive frames and combining them into a video.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">C++</span>
+                            <span class="tech-pill">Graphics Programming</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Ray-Tracer" target="_blank" class="project-link">View on GitHub</a>
+                            <!-- <a href="https://arsh-panesar.itch.io/minecraft-clone" target="_blank" class="project-link">View on Itch</a> -->
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <!-- Mesh Rendering with OpenGL -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Mesh Rendering with Graphics Programming</h3>
+                        <p class="project-subtitle">C++ | OpenGL | ImGui</p>
+                    </summary>
+                    
+                    <div class="project-image-gallery">
+                        <img src="./assets/projects/mesh-rendering-with-opengl/persp_proj.png" alt="Gameplay Screenshot">
+                        <img src="./assets/projects/mesh-rendering-with-opengl/depth_buffer_viz.png" alt="Gameplay Screenshot">
+                        <img src="./assets/projects/mesh-rendering-with-opengl/phong_shading.png" alt="Gameplay Screenshot">
+                        <img src="./assets/projects/mesh-rendering-with-opengl/flat_shading.png" alt="Gameplay Screenshot">
+                    </div>
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Implemented mesh rendering with OpenGL, creating an indexed mesh representation and custom GLSL shaders for ambient, diffuse, and specular lighting.</li>
+                            <li>Developed and tested visualizations for depth buffer, Gouraud, Phong and Flat shading using ImGui for real-time inspection.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">C++</span>
+                            <span class="tech-pill">OpenGL</span>
+                            <span class="tech-pill">GLSL</span>
+                            <span class="tech-pill">ImGui</span>
+                            <span class="tech-pill">Graphics Programming</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Mesh-Rendering-and-Shaders-in-OpenGL" target="_blank" class="project-link">View on GitHub</a>
+                            <!-- <a href="https://arsh-panesar.itch.io/minecraft-clone" target="_blank" class="project-link">View on Itch</a> -->
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <!-- Console Game with In-Game Editor -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Console Shooter with an In-Game Editor</h3>
+                        <p class="project-subtitle">C | Windows API</p>
+                    </summary>
+                    
+                    <div class="project-image-gallery">
+                        <img src="https://user-images.githubusercontent.com/43693790/176169249-c47af3bc-b235-4033-862e-b554ddb2900d.gif" alt="Gameplay Screenshot">
+                        <img src="https://user-images.githubusercontent.com/43693790/176169471-9420b75d-8728-49b3-9196-68b800ecb705.gif" alt="Gameplay Screenshot">
+                        <img src="https://user-images.githubusercontent.com/43693790/176169782-8478d938-8e21-4356-8dea-4a5b1c2428e7.gif" alt="Gameplay Screenshot">
+                    </div>
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Designed a Top-Down Shooter Game on the Windows Command Prompt using the Windows API to draw colorful ASCII.</li>
+                            <li>Programmed 15 Gameplay Systems by employing an ECS architecture to decouple the data and behaviour of Game Actors.</li>
+                            <li>Built an In-Game Editor to modify up to 14 behavioural properties of game actors at runtime, and saved them to the disk.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">C</span>
+                            <span class="tech-pill">Windows API</span>
+                            <span class="tech-pill">Entity Component System (ECS)</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Console-Game-With-Editor" target="_blank" class="project-link">View on GitHub</a>
+                            <!-- <a href="https://arsh-panesar.itch.io/minecraft-clone" target="_blank" class="project-link">View on Itch</a> -->
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <!-- Physics Engine -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Physics Simulation Engine</h3>
+                        <p class="project-subtitle">C++ | SFML | ImGui</p>
+                    </summary>
+                    
+                    <!-- <div class="project-image-gallery">
+                        <img src="https://user-images.githubusercontent.com/43693790/176169249-c47af3bc-b235-4033-862e-b554ddb2900d.gif" alt="Gameplay Screenshot">
+                        <img src="https://user-images.githubusercontent.com/43693790/176169471-9420b75d-8728-49b3-9196-68b800ecb705.gif" alt="Gameplay Screenshot">
+                        <img src="https://user-images.githubusercontent.com/43693790/176169782-8478d938-8e21-4356-8dea-4a5b1c2428e7.gif" alt="Gameplay Screenshot">
+                    </div> -->
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Developed an Efficient Broad-Phase Collision Detection System using Infinite Uniform Grids based on Spatial Hashing.</li>
+                            <li>Tested physics simulations using visuals from the SFML library and varying parameters at runtime using the ImGui library.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">C++</span>
+                            <span class="tech-pill">SFML</span>
+                            <span class="tech-pill">ImGui</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Senku2D" target="_blank" class="project-link">View on GitHub</a>
+                            <!-- <a href="https://arsh-panesar.itch.io/minecraft-clone" target="_blank" class="project-link">View on Itch</a> -->
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <!-- Real-Time Image Enhancement using CUDA -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Real-Time Image Enhancement using GPU Acceleration</h3>
+                        <p class="project-subtitle">C++ | NVIDIA CUDA Toolkit</p>
+                    </summary>
+                    
+                    <div class="project-image-gallery">
+                        <img src="https://github.com/ArshPanesar/Real-Time-Image-Enhancement-using-GPU-Acceleration/raw/master/GPUImageEnhancement/resources/report/contrast_equalize_before1.bmp" alt="Gameplay Screenshot">
+                        <img src="https://github.com/ArshPanesar/Real-Time-Image-Enhancement-using-GPU-Acceleration/raw/master/GPUImageEnhancement/resources/report/contrast_equalize_after1.png" alt="Gameplay Screenshot">
+                        <img src="https://github.com/ArshPanesar/Real-Time-Image-Enhancement-using-GPU-Acceleration/raw/master/GPUImageEnhancement/resources/report/jhe_before.bmp" alt="Gameplay Screenshot">
+                        <img src="https://github.com/ArshPanesar/Real-Time-Image-Enhancement-using-GPU-Acceleration/raw/master/GPUImageEnhancement/resources/report/jhe_after.png" alt="Gameplay Screenshot">
+                    </div>
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Parallelized 6 Image Enhancement Algorithms to run on NVIDIA GPUs by using CUDA, such as Contrast Enhancement through Joint Histogram Equalization, and Image Denoising using an Average Filter.</li>
+                            <li>Analyzed Real-Time Performance for multiple Image Resolutions ranging from 720p to 4K, with GPU being up to 90% faster for all algorithms than CPU for 4K Images.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">C++</span>
+                            <span class="tech-pill">NVIDIA CUDA Toolkit</span>
+                            <span class="tech-pill">GPU Acceleration</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Real-Time-Image-Enhancement-using-GPU-Acceleration" target="_blank" class="project-link">View on GitHub</a>
+                            <!-- <a href="https://arsh-panesar.itch.io/minecraft-clone" target="_blank" class="project-link">View on Itch</a> -->
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+
+        </section>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h1 class="title">
+            Contact
+        </h1>
+
+        <div class="contact-container">
+
+        <p class="contact-text">
+            Feel free to reach out!
+        </p>
+
+        <div class="contact-details">
+
+            <div class="contact-item">
+                <img src="./assets/Email_Icon.svg" alt="Email Icon" class="icon">
+                <a href="mailto:arshpanesar@gmail.com">arshpanesar.pro@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+                <img src="./assets/LinkedIn_Icon.svg" alt="LinkedIn Icon" class="icon">
+                <a href="https://www.linkedin.com/in/arsh-panesar-b0334a1ba/" target="_blank">
+                linkedin.com/in/arsh-panesar
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <img src="./assets/Github_Icon.svg" alt="GitHub Icon" class="icon">
+                <a href="https://github.com/ArshPanesar" target="_blank">
+                github.com/ArshPanesar
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <p class="footer-text">
+                <span style="font-size: 2em; vertical-align: middle;">&copy;</span> 2025 Arsh Panesar · Built with HTML, CSS, and JavaScript
+            </p>
+
+            <div class="footer-links">
+                <a href="https://github.com/ArshPanesar" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/arsh-panesar-b0334a1ba/" target="_blank">LinkedIn</a>
+                <a href="mailto:arshpanesar.pro@gmail.com">Email</a>
+                <a href="#top">Back to Top ↑</a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
