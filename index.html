@@ -187,19 +187,21 @@
                         <div class="skill-category">
                         <h4 class="skill-category-title">Tools</h4>
                         <ul class="skill-list">
+                            <li class="skill-pill">Git</li>
+                            <li class="skill-pill">CMake</li>
+                            <li class="skill-pill">GoogleTest</li>
+                            <li class="skill-pill">OpenGL</li>
+                            <li class="skill-pill">CUDA</li>
                             <li class="skill-pill">Unreal Engine</li>
                             <li class="skill-pill">Unity</li>
                             <li class="skill-pill">Godot</li>
-                            <li class="skill-pill">OpenGL</li>
-                            <li class="skill-pill">CUDA</li>
-                            <li class="skill-pill">Git</li>
                             <li class="skill-pill">OpenCV</li>
                             <li class="skill-pill">Tensorflow</li>
                         </ul>
                         </div>
 
                         <div class="skill-category">
-                        <h4 class="skill-category-title">Other</h4>
+                        <h4 class="skill-category-title">Misc.</h4>
                         <ul class="skill-list">
                             <li class="skill-pill">Data Structures & Algorithms</li>
                             <li class="skill-pill">Machine Learning</li>
@@ -265,6 +267,40 @@
 
         <section class="projects-container">
             
+            <!-- Order Matching Engine -->
+            <div class="project-item">
+                <details>
+                    <summary class="project-summary">
+                        <h3 class="project-title">Order Matching Engine</h3>
+                        <p class="project-subtitle">C++ | CMake | GoogleTest</p>
+                    </summary>
+
+                    <div class="project-content">
+
+                        <ul class="project-description">
+                            <li>Designed and implemented a high-performance limit order matching engine with price-time priority using cache-efficient data structures and bounded price ranges.</li>
+                            <li>Developed a multi-threaded event pipeline using SPSC queues for asynchronous file I/O and order processing, achieving ~12.8M order events/sec core engine throughput and ~5.4M events/sec end-to-end pipeline throughput.</li>
+                            <li>Implemented Robin Hood hashing with linear probing from scratch, maintaining a bounded load factor (≤0.5 in practice) to guarantee probe sequences never degrade to O(n).</li>
+                            <li>Implemented a custom free-list memory allocator with 64-byte aligned allocations (bounded by cache line size) and upfront capacity reservation, eliminating heap allocations entirely from the hot path.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">C++</span>
+                            <span class="tech-pill">CMake</span>
+                            <span class="tech-pill">GoogleTest</span>
+                            <span class="tech-pill">Ninja Build System</span>
+                            <span class="tech-pill">GCC</span>
+                            <span class="tech-pill">Clang</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/ArshPanesar/Order-Matching-Engine" target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
             <!-- Multiplayer Aerial Combat -->
             <div class="project-item">
                 <details>
